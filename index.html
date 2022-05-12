@@ -105,7 +105,7 @@
 
         <!-- Prototype Inheritance -->
         
-        <script>
+        <!-- <script>
             function Person(firstName, lastName){
                 this.firstName = firstName
                 this.lastName = lastName
@@ -133,9 +133,48 @@
 
             eko.sayBye()
             eko.run()
-        </script>
+        </script> -->
 
         <!-- Prototype Inheritance end -->
-       
+
+        <!-- Class OOP -->
+
+        <!-- <script>
+            class Person{
+                constructor(name){
+                    this.name = name
+                }
+            }
+
+            const eko = new Person("budi")
+            console.log(eko.name)
+        </script> -->
+
+        <!-- Class End -->
+
+        <!-- Method Class -->
+
+        <script>
+            class Person{
+                constructor(name){
+                    this.name = name
+                }
+
+                sayHello (name) {
+                    console.info(`Halo Nama saya ${name}`)
+                }
+            }
+
+            const eko = new Person("eko")
+            console.log(eko)
+            eko.sayHello("budi")
+
+            const budi = new Person("budi")
+            console.log(budi)
+            budi.sayHello("eko")
+
+        </script>
+
+        <!-- Method Class end -->
     </body>
 </html>
