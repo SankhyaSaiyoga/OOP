@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Belajar OOP</title>
+    </head>
+
+    <body>
+        <!-- Objek manualn start -->
+
+        <!-- <script>
+            const eko = {
+                firstName: "sankhya",
+                lastName: "Krisna"
+            }
+
+            const sankhya = {
+                firstName: "sankhya",
+                lastName: "Krisna"
+            }
+            console.log(eko,sankhya)
+        </script> -->
+
+        <!-- Objek manual end -->
+
+        <!-- Constructor Function start-->
+
+        <!-- <script>
+            function Person(){
+                const eko = new Person();
+                const sankhya = new Person();
+            }
+        </script> -->
+
+        <!-- Constructor Function end-->
+
+        <!-- Properti Constructor start -->
+
+        <!-- <script>
+            function Person(){
+                this.firstName = "";
+                this.lastName = "";
+                this.sayHello = function (name) {
+                    console.info(`Hello ${name}, my name is ${this.firstname}`)
+                }
+            }            
+            const eko = new Person();
+            eko.firstName = "eko"
+            eko.lastName = "sebastian"
+            eko.sayHello = "joko"
+
+            const sankhya = new Person();
+            sankhya.firstName = "sankhya"
+            sankhya.lastName = "krisna"
+            sankhya.sayHello = "budi"
+
+            console.log(eko)
+            console.log(sankhya)
+        </script> -->
+
+        <!-- Properti Constructor end  -->
+
+        <!-- Parameter pada constructor -->
+        <!-- <script>
+            function Person(firstName, lastName){
+                this.firstName = firstName
+                this.lastName = lastName
+                this.sayHello = function (name){
+                    console.info(`Hello ${name} , my name is ${this.firstName}`)
+                }
+            }
+
+            const eko = new Person("eko", "kustiadi")
+            eko.sayHello = "joko"
+
+            const sankhya = new Person("sankhya", "krisna")
+            sankhya.sayHello = "eko"
+
+            console.log(eko)
+            console.log(sankhya)
+
+        </script> -->
+        <!-- Parameter pada constructor end -->
+
+        <!-- Constructor Inheritance -->
+
+        <!-- <script>
+            function Employee (firstName){
+                this.firstName = firstName
+                this.sayHello = function(name){
+                    console.info(`Hello ${name} , my name is ${this.firstName}`)
+                }
+            }
+
+            function Manager (firstName, lastName){
+                Employee.call(this, firstName)
+                this.lastName = lastName
+            }
+
+            const eko = new Manager("eko", "kustiadi")
+            console.log(eko)
+        </script> -->
+
+        <!-- Constructor Inheritance end -->
+
+        <!-- Prototype Inheritance -->
+        
+        <script>
+            function Person(firstName, lastName){
+                this.firstName = firstName
+                this.lastName = lastName
+                this.sayHello = function (name){
+                    console.info(`Hello ${name} , my name is ${this.firstName}`)
+                }
+            }
+
+            Person.prototype.sayBye = function(){
+                console.info("Good Bye")
+            }
+
+            Person.prototype.run = function(){
+                console.info(`${this.firstName} is running`)
+            }
+
+            const eko = new Person("eko", "kustiadi")
+            eko.sayHello = "joko"
+
+            const sankhya = new Person("sankhya", "krisna")
+            sankhya.sayHello = "eko"
+
+            console.log(eko)
+            console.log(sankhya)
+
+            eko.sayBye()
+            eko.run()
+        </script>
+
+        <!-- Prototype Inheritance end -->
+       
+    </body>
+</html>
